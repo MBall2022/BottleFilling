@@ -701,7 +701,7 @@ function createWalls() {
   var txtloader = new THREE.TextureLoader();
   txtloader.setCrossOrigin("anonymous");
   const floorTexture = txtloader.load(
-  '/js/pics/labFloor.jpeg');
+  'js/assets/labFloor.jpeg');
 
   var Fmaterial = new THREE.MeshPhongMaterial({ color:0xFFFFFF, map: floorTexture });
   //floorTexture.wrapS = THREE.RepeatWrapping;
@@ -721,13 +721,13 @@ function createWalls() {
   var txtloader = new THREE.TextureLoader();
   txtloader.setCrossOrigin("anonymous");
   const wallTexture = txtloader.load(
-  '/js/pics/concreteWall.jpeg');
+  'js/assets/concreteWall.jpeg');
 
    //Load the ceiling texture
   var txtloader2 = new THREE.TextureLoader();
   txtloader2.setCrossOrigin("anonymous");
   const ceilingTexture = txtloader2.load(
-  '/js/pics/ceiling.jpeg');
+  'js/assets/ceiling.jpeg');
   
   var wallMaterial = new THREE.MeshPhongMaterial({ color:0xFFFFFF, map: wallTexture });
     var ceilingMaterial = new THREE.MeshPhongMaterial({ color:0xFFFFFF, map: ceilingTexture });
